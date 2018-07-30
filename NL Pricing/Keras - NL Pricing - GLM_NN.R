@@ -47,7 +47,7 @@ ll = sample (c (1: nrow ( freMTPL2freq )), round (0.9* nrow ( freMTPL2freq )), r
 learn = freMTPL2freq [ll ,]
 test = freMTPL2freq [ setdiff (c (1: nrow (freMTPL2freq )), ll ),]
 
-### Fit GLMs
+### Fit GLMs - code taken from Noll, Salzmann and Wuthrich (2018)
 
 null_model = glm ( formula = ClaimNb ~1 , family = poisson (), data = learn , offset = log ( Exposure ))
 

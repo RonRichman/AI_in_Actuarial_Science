@@ -256,7 +256,7 @@ ggsave("c:/r/age_dims.wmf", device = "wmf")
 
 ### transfer learning
 
-### prepare data for GLM
+### prepare data for GLM  - code for GLM and feature engineering taken from Noll, Salzmann and Wuthrich (2018)
 
 freMTPL2freq[,AreaGLM:=as.integer(Area)]
 freMTPL2freq[,VehPowerGLM := as.factor(pmin(VehPower,9))]

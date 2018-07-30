@@ -14,3 +14,5 @@ The examples in the Non-life pricing folder rely on the Poisson Deviance loss fu
 
 This function has been provided in the file 'poisson_dev.py'. One easy way to incorporate this into Keras is to add the code within this file to the Keras installation directly. This can be done by searching for the file 'losses.py' and copying the code into the file.
 
+Model weights have been provided in each folder. Running the scripts should reproduce similar models, but the results mights differ due to some random variation during the fitting process, such as dropout.
+
